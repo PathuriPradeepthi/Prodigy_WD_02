@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #405D72, #758694);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #181818;
+    color: #f0f0f0;
+}
+
+.stopwatch {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .stopwatch {
+    background: #282828;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+    font-size: 2.5em;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.buttons button, #darkModeToggle {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #DCA47C;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover, #darkModeToggle:hover {
+    background-color: #DCA47C;
+}
+
+.dark-mode .buttons button, .dark-mode #darkModeToggle {
+    background-color: #A0937D;
+}
+
+.dark-mode .buttons button:hover, .dark-mode #darkModeToggle:hover {
+    background-color: #A0937D;
+}
+
+#laps {
+    list-style-type: none;
+    padding: 0;
+}
+
+#laps li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#laps li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.dark-mode #laps li:nth-child(odd) {
+    background-color: #3a3a3a;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .progress-bar-container {
+    background-color: #3a3a3a;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #DCA47C;
+    width: 0;
+    transition: width 0.1s ease, background-color 0.3s ease;
+}
+
+.dark-mode .progress-bar {
+    background-color: #597445; /* Adjust the color to provide visibility */
+}
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}

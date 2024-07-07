@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Web Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <br>
+    <div class="stopwatch">
+        <h1>⏱️ Stopwatch</h1>
+        <div id="display">00:00:00</div>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="buttons">
+            <button id="startPauseBtn">Start</button>
+            <button id="resetBtn" disabled>Reset</button>
+            <button id="lapBtn" disabled>Lap</button>
+        </div>
+        <ul id="laps"></ul>
+    </div>
+    <audio id="startSound" src="start.mp3" preload="auto"></audio>
+    <audio id="pauseSound" src="pause.mp3" preload="auto"></audio>
+    <audio id="resetSound" src="reset.mp3" preload="auto"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
